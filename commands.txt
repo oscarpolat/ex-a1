@@ -1,0 +1,100 @@
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1
+$ git config --list
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+core.editor="C:\\Program Files (x86)\\Notepad++\\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+user.name=oscarpolat
+user.email=oscarpolat@msn.com
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1
+$ git init
+Initialized empty Git repository in C:/Users/OZGUR/REDI/ex-a1/.git/
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1 (master)
+$ ls -la
+total 4
+drwxr-xr-x 1 OZGUR 197121 0 Apr 27 12:46 ./
+drwxr-xr-x 1 OZGUR 197121 0 Apr 27 12:34 ../
+drwxr-xr-x 1 OZGUR 197121 0 Apr 27 12:46 .git/
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1 (master)
+$ touch readme.md
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1 (master)
+$ nano readme.md
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1 (master)
+$ ls -la
+total 5
+drwxr-xr-x 1 OZGUR 197121  0 Apr 27 12:46 ./
+drwxr-xr-x 1 OZGUR 197121  0 Apr 27 12:34 ../
+drwxr-xr-x 1 OZGUR 197121  0 Apr 27 12:46 .git/
+-rw-r--r-- 1 OZGUR 197121 32 Apr 27 12:47 readme.md
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1 (master)
+$ git add readme.md
+warning: LF will be replaced by CRLF in readme.md.
+The file will have its original line endings in your working directory
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   readme.md
+
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1 (master)
+$ git commit -m "EX A1 first commit"
+[master (root-commit) 44c5739] EX A1 first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1 (master)
+$ git remote add origin https://github.com/oscarpolat/ex-a1.git
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 242 bytes | 121.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/oscarpolat/ex-a1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1 (master)
+$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/oscarpolat/ex-a1.git
+  Push  URL: https://github.com/oscarpolat/ex-a1.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+
+OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1 (master)
+$
