@@ -4,24 +4,6 @@ fatal: not a git repository (or any of the parent directories): .git
 
 OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1
 $ git config --list
-http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
-http.sslbackend=openssl
-diff.astextplain.textconv=astextplain
-filter.lfs.clean=git-lfs clean -- %f
-filter.lfs.smudge=git-lfs smudge -- %f
-filter.lfs.process=git-lfs filter-process
-filter.lfs.required=true
-credential.helper=manager
-core.autocrlf=true
-core.fscache=true
-core.symlinks=false
-core.editor="C:\\Program Files (x86)\\Notepad++\\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
-filter.lfs.process=git-lfs filter-process
-filter.lfs.required=true
-filter.lfs.clean=git-lfs clean -- %f
-filter.lfs.smudge=git-lfs smudge -- %f
-user.name=oscarpolat
-user.email=oscarpolat@msn.com
 
 OZGUR@OZGUR-PC MINGW64 ~/REDI/ex-a1
 $ git init
